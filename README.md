@@ -9,3 +9,6 @@
 * lista 2
   * lista 3
 
+# Encabezado 1
+## Encabezado 2
+### Encabezado 3

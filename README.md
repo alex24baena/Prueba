@@ -1,26 +1,31 @@
-**este texto va en negrita**
+# Copia de seguridad manual
 
-*este texto va en cursiva*
+**ID**: 6
 
-1. shdjsd
-2. sdf
+**Breve descripción**: El sistema realizará una copia de seguridad de los datos solicitada por el usuario.
 
-* lista 1
-* lista 2
-  * lista 3
 
-# Encabezado 1
-## Encabezado 2
-### Encabezado 3
+**Actores principales**: Profesor.
 
->Esto es una cita. 
+**Actores secundarios**: Alumnos.
 
-`git init`
 
-~~~
-iuefgh
-ergdfg
-fsdgdrg
-~~~
+**Precondiciones**: 
 
-![el viejo licaldo](http://sociedadcamineradelreal.org/wp-content/uploads/2018/05/RETRATO-DE-RICARDO-LEON.jpg)
+1. Debe de existir almenos 1 alumno registrado en el sistema.
+2. Debe de existir un fichero en el que estén almacenados los datos.
+
+**Flujo principal**:
+
+1. El caso de uso comienza cuando el usuario solicita realizar una copia de seguridad de los datos.
+2. El sistema genera un segundo fichero con los datos guardados hasta ese momento.
+
+**Postcondiciones**:
+
+- El sistema generá un fichero que incluirá los datos registrados en el sistema hasta ese momento.
+
+**Flujos alternativos**:
+
+1.a. Si este fichero ya existe se sobreescribe por el nuevo.
+
+2.a. Si no existen alumnos registrados en el sistema no se creara el fichero y se mostrara un mensaje de error.
